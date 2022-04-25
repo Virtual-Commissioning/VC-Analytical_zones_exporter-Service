@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VC-Analytical_zones_exporter-Service", "VC-Analytical_zones_exporter-Service.csproj", "{4BB9C30D-54E2-494B-9377-502DF7401065}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BB9C30D-54E2-494B-9377-502DF7401065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BB9C30D-54E2-494B-9377-502DF7401065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BB9C30D-54E2-494B-9377-502DF7401065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BB9C30D-54E2-494B-9377-502DF7401065}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {659C978E-5FA3-4AC7-A458-748C8A861B3D}
+	EndGlobalSection
+EndGlobal

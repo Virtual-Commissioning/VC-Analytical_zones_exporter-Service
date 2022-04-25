@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BB9C30D-54E2-494B-9377-502DF7401065}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VC_Analytical_zones_exporter_Service.git</RootNamespace>
+    <AssemblyName>VC-Analytical_zones_exporter-Service.git</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyticalZonesMapper.cs" />
+    <Compile Include="Helpers\BuildingMappers\BuildingMapper.cs" />
+    <Compile Include="Helpers\BuildingMappers\BuildingShadingMapper.cs" />
+    <Compile Include="Helpers\BuildingMappers\ShadingGeometryMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\ConstructionMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\CurtainWallWindowConstructionMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\DoorConstructionMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\FloorConstructionMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\OpeningConstructionMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\RoofConstructionMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\SurfaceConstructionMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\WallConstructionMapper.cs" />
+    <Compile Include="Helpers\ConstructionMappers\WindowConstructionMapper.cs" />
+    <Compile Include="Helpers\GeometricOperations\MovePointTowardsPoint.cs" />
+    <Compile Include="Helpers\GeometricOperations\MovePointTowardsPointV2.cs" />
+    <Compile Include="Helpers\GeometricOperations\SortPoints.cs" />
+    <Compile Include="Helpers\GeometricOperations\SortPointsV2.cs" />
+    <Compile Include="Helpers\GeometricOperations\SortPointsV3.cs" />
+    <Compile Include="Helpers\HelperFunctions.cs" />
+    <Compile Include="Helpers\HttpClient.cs" />
+    <Compile Include="Helpers\ImperialToMetricConverter.cs" />
+    <Compile Include="Helpers\JsonParser.cs" />
+    <Compile Include="Helpers\MaterialMappers\AirGapMaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\CurtainWallMaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\CurtainWallWindowsMaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\DoorMaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\FloorMaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\MaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\RoofMaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\SurfaceMaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\WallMaterialMapper.cs" />
+    <Compile Include="Helpers\MaterialMappers\WindowMaterialMapper.cs" />
+    <Compile Include="Helpers\SiteMapper.cs" />
+    <Compile Include="Helpers\SiteShadingMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\AirLoadSystemMappers.cs" />
+    <Compile Include="Helpers\ZoneMappers\CurtainWallFrameAndDividerMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\CurtainWallWindowSubSurfaceMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\DoorAndWindowSubSurfaceMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\FrameAndDividerMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\GetAngle.cs" />
+    <Compile Include="Helpers\ZoneMappers\GetAssociatedConstruction.cs" />
+    <Compile Include="Helpers\ZoneMappers\GetAssociatedOpeningConstruction.cs" />
+    <Compile Include="Helpers\ZoneMappers\HVACMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\InfiltrationMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\InternalGainsMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\InternalGainsMappers\EquipmentMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\InternalGainsMappers\LightingMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\InternalGainsMappers\PeopleMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\OpeningSubSurfaceMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\OutsideBondaryConditionsMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\OutsideBoundaryConditionsObjectMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\PlaneCenterMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\PlaneCenterMapperV2.cs" />
+    <Compile Include="Helpers\ZoneMappers\SubSurfaceCenterMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\SubSurfaceGeometryMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\SubSurfaceMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\SurfaceGeometryMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\SurfaceMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\ThermostatMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\ZoneMapper.cs" />
+    <Compile Include="Helpers\ZoneMappers\ZoneShadingMapper.cs" />
+    <Compile Include="Models\Building.cs" />
+    <Compile Include="Models\Construction\Constructions.cs" />
+    <Compile Include="Models\Construction\OpeningConstruction.cs" />
+    <Compile Include="Models\SubSurface\DoorAndWindow.cs" />
+    <Compile Include="Models\SubSurface\FrameAndDivider.cs" />
+    <Compile Include="Models\SubSurface\Opening.cs" />
+    <Compile Include="Models\SubSurface\SubSurfaceType.cs" />
+    <Compile Include="Models\Construction\SurfaceConstruction.cs" />
+    <Compile Include="Models\Geometry\Coordinate.cs" />
+    <Compile Include="Models\Geometry\VertexCoordinate.cs" />
+    <Compile Include="Models\Shading\ShadingBuilding.cs" />
+    <Compile Include="Models\Shading\ShadingSite.cs" />
+    <Compile Include="Models\Shading\ShadingZone.cs" />
+    <Compile Include="Models\Site.cs" />
+    <Compile Include="Models\Surfaces\OutsideBoundaryConditions.cs" />
+    <Compile Include="Models\Surfaces\OutsideBoundaryConditionsObject.cs" />
+    <Compile Include="Models\Surfaces\Surface.cs" />
+    <Compile Include="Models\Surfaces\SurfaceType.cs" />
+    <Compile Include="Models\Zones\Analytical\Airflow.cs" />
+    <Compile Include="Models\Zones\Analytical\AirLoadSystem.cs" />
+    <Compile Include="Models\Zones\Analytical\HVAC.cs" />
+    <Compile Include="Models\Zones\Analytical\Infiltration.cs" />
+    <Compile Include="Models\Zones\Analytical\InternalGains\Equipment.cs" />
+    <Compile Include="Models\Zones\Analytical\InternalGains\InternalGains.cs" />
+    <Compile Include="Models\Zones\Analytical\InternalGains\Lighting.cs" />
+    <Compile Include="Models\Zones\Analytical\InternalGains\People.cs" />
+    <Compile Include="Models\Zones\Analytical\Material\AirGap.cs" />
+    <Compile Include="Models\Zones\Analytical\Material\DoorMaterial.cs" />
+    <Compile Include="Models\Zones\Analytical\Material\Materials.cs" />
+    <Compile Include="Models\Zones\Analytical\Material\SurfaceMaterial.cs" />
+    <Compile Include="Models\Zones\Analytical\Material\SurfaceLayers.cs" />
+    <Compile Include="Models\Zones\Analytical\Material\WallMaterial.cs" />
+    <Compile Include="Models\Zones\Analytical\Material\WindowMaterial.cs" />
+    <Compile Include="Models\Zones\Analytical\Thermostat.cs" />
+    <Compile Include="Models\Zones\Zone.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Zones\Geometry\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
