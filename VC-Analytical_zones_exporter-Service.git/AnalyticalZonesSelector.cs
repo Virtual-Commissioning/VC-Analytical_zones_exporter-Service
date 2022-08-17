@@ -22,7 +22,7 @@ namespace AnalyticalZonesMapper
 {
     [Transaction(TransactionMode.Manual)]
     [Regeneration(RegenerationOption.Manual)]
-    public class AnalyticalZonesMapper : IExternalCommand
+    public class AnalyticalZonesSelector : IExternalCommand
     {
         Result IExternalCommand.Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {

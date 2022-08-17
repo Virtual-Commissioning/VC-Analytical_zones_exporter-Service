@@ -33,7 +33,8 @@ namespace VC_Analytical_zones_exporter_Service.Helpers
                 constructions,
                 ",",
                 "\"BOT\":",
-                site);
+                site,
+                "}");
 
             return jsonToWebApp;
         }

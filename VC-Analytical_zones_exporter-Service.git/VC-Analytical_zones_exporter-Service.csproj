@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnalyticalZonesMapper.cs" />
+    <Compile Include="AnalyticalZonesSelector.cs" />
     <Compile Include="Helpers\BuildingMappers\BuildingMapper.cs" />
     <Compile Include="Helpers\BuildingMappers\BuildingShadingMapper.cs" />
     <Compile Include="Helpers\BuildingMappers\ShadingGeometryMapper.cs" />
