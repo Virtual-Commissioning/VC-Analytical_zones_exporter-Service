@@ -22,9 +22,15 @@ namespace VC_Analytical_zones_exporter_Service.Models
         public List<Dictionary<string, ShadingBuilding>> BuildingShadings { get; set; }
 
 
-        public Building(string name, string northAxis, string terrain,
-                        string loadConvTol, string tempConvTol, string solarDistribution,
-                        string maxWarmupDays, string minWarmupDays, List<Dictionary<string, Zone>> zones,
+        public Building(string name, 
+                        string northAxis, 
+                        string terrain,
+                        string loadConvTol, 
+                        string tempConvTol, 
+                        string solarDistribution,
+                        string maxWarmupDays, 
+                        string minWarmupDays, 
+                        List<Dictionary<string, Zone>> zones,
                         List<Dictionary<string, ShadingBuilding>> buildingShadings)
         {
             Name = name;

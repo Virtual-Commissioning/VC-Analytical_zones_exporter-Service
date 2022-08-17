@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalGains
 {
@@ -12,8 +8,9 @@ namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalG
         public List<Lighting> Lights { get; set; }
         public List<Equipment> Equipment { get; set; }
 
-        public InternalGains
-            (List<People> people, List<Lighting> lighting, List<Equipment> equipment)
+        public InternalGains(List<People> people,
+                             List<Lighting> lighting,
+                             List<Equipment> equipment)
         {
             People = people;
             Lights = lighting;

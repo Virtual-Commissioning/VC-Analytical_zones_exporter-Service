@@ -1,9 +1,5 @@
 ﻿using VC_Analytical_zones_exporter_Service.Models.Geometry;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VC_Analytical_zones_exporter_Service.Models.SubSurface
 {
@@ -20,9 +16,11 @@ namespace VC_Analytical_zones_exporter_Service.Models.SubSurface
         public List<Coordinate> VertexCoordinates { get; set; }
         public FrameAndDivider FrameAndDivider { get; set; }
 
-        public DoorAndWindow(string name, string subSurfType, string constructionId,
-            string hostSurfId, string outsideBCObj, string viewFactorToGround, string frameAndDividerName,
-            int? multiplier, List<Coordinate> vertexCoordinates, FrameAndDivider frameAndDivider)
+        public DoorAndWindow(string name, string subSurfType, 
+                             string constructionId, string hostSurfId, 
+                             string outsideBCObj, string viewFactorToGround, 
+                             string frameAndDividerName, int? multiplier, 
+                             List<Coordinate> vertexCoordinates, FrameAndDivider frameAndDivider)
         {
             Name = name;
             Surface_Type = subSurfType;

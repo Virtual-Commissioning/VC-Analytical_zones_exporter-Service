@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical
+﻿namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical
 {
     public class Thermostat
     {
@@ -15,7 +9,7 @@ namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical
         public string Constant_Cooling_Setpoint { get; set; }
 
         public Thermostat(string name, string heatingSetpointSchedule, string constantHeatingSetpoint,
-            string coolingSetpointSchedule, string constantCoolingSetpoint)
+                          string coolingSetpointSchedule, string constantCoolingSetpoint)
         {
             Name = name;
             Heating_Setpoint_Schedule_Name = heatingSetpointSchedule;

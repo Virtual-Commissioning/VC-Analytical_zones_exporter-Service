@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.Material
+﻿namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.Material
 {
     public class SurfaceMaterial
     {
@@ -21,8 +15,8 @@ namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.Material
         public double? Visible_Absorptance { get; set; }
 
         public SurfaceMaterial(string readableName, string name, int? roughness, double? thickness,
-            double? conductivity, double? density, double? specificHeat, double? thermalAbsorptance,
-            double? solarAbsorptance, double? visibleAbsorptance)
+                               double? conductivity, double? density, double? specificHeat, 
+                               double? thermalAbsorptance, double? solarAbsorptance, double? visibleAbsorptance)
         {
             ReadableName = readableName;
             Name = name;

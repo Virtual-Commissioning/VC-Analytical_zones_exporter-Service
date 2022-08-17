@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalGains
+﻿namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalGains
 {
     public class Lighting
     {
@@ -20,8 +14,8 @@ namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalG
         public string EndUse_Subcategory { get; set; }
 
         public Lighting(string id, string zoneId, string lightingSchedule, string calculationMethod,
-            double? lightingLevel, double? returnAirFraction, double? fractionRadiant,
-            double? fractionVisible, double? fractionReplaceable, string endUseSubCategory)
+                        double? lightingLevel, double? returnAirFraction, double? fractionRadiant,
+                        double? fractionVisible, double? fractionReplaceable, string endUseSubCategory)
         {
             Name = id;
             Zone_or_ZoneList_or_Space_or_SpaceList_Name = zoneId;

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace VC_Analytical_zones_exporter_Service.Models.SubSurface
 {
@@ -13,8 +9,8 @@ namespace VC_Analytical_zones_exporter_Service.Models.SubSurface
         public List<Dictionary<string, Opening>> Openings { get; set; }
 
         public SubSurfaceType(List<Dictionary<string, DoorAndWindow>> subSurfaceDoor, 
-                           List<Dictionary<string, DoorAndWindow>> subSurfaceWindow, 
-                           List<Dictionary<string, Opening>> subSurfaceOpening)
+                              List<Dictionary<string, DoorAndWindow>> subSurfaceWindow, 
+                              List<Dictionary<string, Opening>> subSurfaceOpening)
         {
             Doors = subSurfaceDoor;
             Windows = subSurfaceWindow;

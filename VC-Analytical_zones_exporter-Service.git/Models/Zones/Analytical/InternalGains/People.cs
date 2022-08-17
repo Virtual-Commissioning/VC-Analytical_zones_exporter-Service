@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalGains
+﻿namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalGains
 {
     public class People
     {
@@ -27,9 +21,9 @@ namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalG
         public string Thermal_Comfort_Model_1_Type { get; set; }
 
         public People(string id, string zoneName, string peopleSchedule, string calculationMethod, int? numberOfPeople,
-            double? fractionRadiant, double? sensibleHeatFraction, string activitySchedule, double? co2GenerationRate,
-            string enableAshare55ComfortWarnings, string mRTCalculationType, string surfaceId, string workEfficiencySchedule,
-            string clothingInsulationCalculationMethod, string clothingInsulationSchedule, string airVelocitySchedule, string thermalComfortType)
+                      double? fractionRadiant, double? sensibleHeatFraction, string activitySchedule, double? co2GenerationRate,
+                      string enableAshare55ComfortWarnings, string mRTCalculationType, string surfaceId, string workEfficiencySchedule,
+                      string clothingInsulationCalculationMethod, string clothingInsulationSchedule, string airVelocitySchedule, string thermalComfortType)
         {
             Name = id;
             Zone_or_ZoneList_or_Space_or_SpaceList_Name = zoneName;

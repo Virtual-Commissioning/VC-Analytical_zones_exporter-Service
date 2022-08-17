@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.Material
+﻿namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.Material
 {
     public class WindowMaterial
     {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalGains
+﻿namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalGains
 {
     public class Equipment
     {
@@ -19,9 +13,9 @@ namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.InternalG
         public string EndUse_Subcategory { get; set; }
 
         public Equipment(string id, string zoneId, string equipmentSchedule,
-            string calculationMethod, double? designLevel,
-            double? fractionLatent, double? fractionRadiant, double? fractionLost,
-            string endUseSubCategory)
+                         string calculationMethod, double? designLevel,
+                         double? fractionLatent, double? fractionRadiant, 
+                         double? fractionLost, string endUseSubCategory)
         {
             Name = id;
             Zone_or_ZoneList_or_Space_or_SpaceList_Name = zoneId;

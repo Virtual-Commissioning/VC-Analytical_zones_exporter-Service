@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 using VC_Analytical_zones_exporter_Service.Models.Geometry;
 
@@ -21,9 +17,11 @@ namespace VC_Analytical_zones_exporter_Service.Models.SubSurface
         public string View_Factor_to_Ground { get; set; }
         public List<Coordinate> VertexCoordinates { get; set; }
 
-        public Opening(string id, string subSurfType, string constructionId, string zoneId,
-            string outsideBCObj, string outsideBC, bool sunExposure, bool windExposure,
-            string viewFactorToGround, List<Coordinate> vertices)
+        public Opening(string id, string subSurfType, 
+                       string constructionId, string zoneId,
+                       string outsideBCObj, string outsideBC, 
+                       bool sunExposure, bool windExposure,
+                       string viewFactorToGround, List<Coordinate> vertices)
         {
             Name = id;
             Surface_Type = subSurfType;

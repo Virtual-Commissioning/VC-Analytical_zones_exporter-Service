@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.git.Models.Zones.Analytical
+﻿namespace VC_Analytical_zones_exporter_Service.git.Models.Zones.Analytical
 {
     public class Infiltration
     {
@@ -23,9 +17,9 @@ namespace VC_Analytical_zones_exporter_Service.git.Models.Zones.Analytical
 
 
         public Infiltration(string name, string zoneId, string infiltrationSchedule, string calculationMethod,
-            double? designFlowRate, double? flowPerZoneFloorArea, double? flowPrExteriorSurfaceArea, double? airChangesPerHour,
-            double? constantTermCoefficient, double? tempTermCoefficient,
-            double? velocityTermCoefficient, double? velocityTermSqCoefficient)
+                            double? designFlowRate, double? flowPerZoneFloorArea, double? flowPrExteriorSurfaceArea, 
+                            double? airChangesPerHour, double? constantTermCoefficient, double? tempTermCoefficient,
+                            double? velocityTermCoefficient, double? velocityTermSqCoefficient)
         {
             Name = name;
             Zone_or_ZoneList_Name = zoneId;

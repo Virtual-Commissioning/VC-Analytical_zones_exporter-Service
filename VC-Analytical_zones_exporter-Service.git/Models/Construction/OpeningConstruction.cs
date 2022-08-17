@@ -13,7 +13,10 @@ namespace VC_Analytical_zones_exporter_Service.Models.Construction
         public string Simple_Mixing_Air_Changes_per_Hour { get; set; }
         public string Simple_Mixing_Schedule_Name { get; set; }
 
-        public OpeningConstruction(string name, string airExchangeMethod, string simpleMixingAirChangesPerHour, string simpleMixingScheduleName)
+        public OpeningConstruction(string name, 
+                                   string airExchangeMethod, 
+                                   string simpleMixingAirChangesPerHour, 
+                                   string simpleMixingScheduleName)
         {
             Name = name;
             Air_Exchange_Method = airExchangeMethod;

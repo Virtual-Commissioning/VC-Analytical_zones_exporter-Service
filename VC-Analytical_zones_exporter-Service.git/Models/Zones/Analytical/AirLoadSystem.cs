@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical
+﻿namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical
 {
     public class AirLoadSystem
     {
@@ -41,13 +35,14 @@ namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical
 
 
         public AirLoadSystem(string zoneId, string thermostatName, string avaliabilitySchedule, double? maxHeatingSupplyAirTemp,
-            double? minCoolingSupplyAirTemp, double? maxHeatingSupplyAirHumidity, double? minCoolingSupplyAirHumidity,
-            double? heatingLimit, double? maxHeatingAFR, double? maxSensibleHeatingCapacity, double? coolingLimit,
-            double? maxCoolingAFR, double? maxSensibleCoolingCapacity, string heatingAvaliabilitySchedule, string coolingAvaliabilitySchedule,
-            string dehumidityControlType, double? coolingSensibleHeatingRatio, double? dehumidificationSetpoint, string humidityControlType,
-            double? humiditySetpoint, string outdoorAirMethod, double? outAFRPrPerson, double? outAFRPrArea, double? outAFRPrZone,
-            string outdoorAirObject, string demandControlledVentilationType, string outdoorAirEconomizerType,
-            string heatRecoveryType, double? sensibleHeatRecoveryEfficiency, double? latentHeatRecoveryEfficiency)
+                             double? minCoolingSupplyAirTemp, double? maxHeatingSupplyAirHumidity, double? minCoolingSupplyAirHumidity,
+                             double? heatingLimit, double? maxHeatingAFR, double? maxSensibleHeatingCapacity, double? coolingLimit,
+                             double? maxCoolingAFR, double? maxSensibleCoolingCapacity, string heatingAvaliabilitySchedule, 
+                             string coolingAvaliabilitySchedule, string dehumidityControlType, double? coolingSensibleHeatingRatio, 
+                             double? dehumidificationSetpoint, string humidityControlType, double? humiditySetpoint, 
+                             string outdoorAirMethod, double? outAFRPrPerson, double? outAFRPrArea, double? outAFRPrZone,
+                             string outdoorAirObject, string demandControlledVentilationType, string outdoorAirEconomizerType,
+                             string heatRecoveryType, double? sensibleHeatRecoveryEfficiency, double? latentHeatRecoveryEfficiency)
         {
             Zone_Name = zoneId;
             Template_Thermostat_Name = thermostatName;

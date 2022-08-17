@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.Material
 {
@@ -13,8 +9,10 @@ namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.Material
         public List<Dictionary<string, DoorMaterial>> DoorMaterials { get; set; }
         public List<Dictionary<string, WindowMaterial>> WindowMaterials { get; set; }
 
-        public Materials(List<Dictionary<string, SurfaceMaterial>> surfaceMaterials, List<Dictionary<string, AirGapMaterial>> airGapMaterials,
-            List<Dictionary<string, DoorMaterial>> doorMaterials, List<Dictionary<string, WindowMaterial>> windowMaterials)
+        public Materials(List<Dictionary<string, SurfaceMaterial>> surfaceMaterials, 
+                         List<Dictionary<string, AirGapMaterial>> airGapMaterials,
+                         List<Dictionary<string, DoorMaterial>> doorMaterials, 
+                         List<Dictionary<string, WindowMaterial>> windowMaterials)
         {
             SurfaceMaterials = surfaceMaterials;
             AirGapMaterials = airGapMaterials;

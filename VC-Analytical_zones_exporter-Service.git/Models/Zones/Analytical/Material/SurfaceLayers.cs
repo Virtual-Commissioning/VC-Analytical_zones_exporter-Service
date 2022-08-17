@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using VC_Analytical_zones_exporter_Service.Models.Surfaces;
 
 namespace VC_Analytical_zones_exporter_Service.Models.Zones.Analytical.Material

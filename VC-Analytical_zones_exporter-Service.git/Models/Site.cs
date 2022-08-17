@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using VC_Analytical_zones_exporter_Service.Models.Shading;
 
 namespace VC_Analytical_zones_exporter_Service.Models.Site
@@ -17,7 +13,10 @@ namespace VC_Analytical_zones_exporter_Service.Models.Site
         public List<Dictionary<string, Building>> Buildings { get; set; }
         public List<Dictionary<string, ShadingSite>> SiteShadings { get; set; }
 
-        public Site(string name, string latitude, string longitude, string timeZone, string elevation, List<Dictionary<string, Building>> buildings, List<Dictionary<string, ShadingSite>> shadingSite)
+        public Site(string name, string latitude,
+                    string longitude, string timeZone,
+                    string elevation, List<Dictionary<string, Building>> buildings,
+                    List<Dictionary<string, ShadingSite>> shadingSite)
         {
             Name = name;
             Latitude = latitude;

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VC_Analytical_zones_exporter_Service.Models.SubSurface
+﻿namespace VC_Analytical_zones_exporter_Service.Models.SubSurface
 {
     public class FrameAndDivider
     {
@@ -35,30 +29,30 @@ namespace VC_Analytical_zones_exporter_Service.Models.SubSurface
         public string Inside_Reveal_Solar_Absorptance { get; set; }
 
         public FrameAndDivider(string id,
-            string frameWidth,
-            string frameOutsideProjection,
-            string frameInsideProjection,
-            string frameConductance,
-            string ratioOfFrameEdgeGlassConductanceToCenterOfGlassConductance,
-            string frameSolarAbsorptance,
-            string frameVisibleAbsorptance,
-            string frameThermalHemisphericalEmissivity,
-            string dividerType,
-            string dividerWidth,
-            string numberOfHorizontalDividers,
-            string numberOfVerticalDividers,
-            string dividerOutsideProjection,
-            string dividerInsideProjection,
-            string dividerConductance,
-            string ratioOfDividerEdgeGlassConductanceToCenterOfGlassConductance,
-            string dividerSolarAbsorptance,
-            string dividerVisibleAbsorptance,
-            string dividerThermalHemisphericalEmissivity,
-            string outsideRevealSolarAbsorptance,
-            string insideSillDepth,
-            string insideSillSolarAbsorptance,
-            string insideRevealDepth,
-            string insideRevealSolarAbsorptance)
+                               string frameWidth,
+                               string frameOutsideProjection,
+                               string frameInsideProjection,
+                               string frameConductance,
+                               string ratioOfFrameEdgeGlassConductanceToCenterOfGlassConductance,
+                               string frameSolarAbsorptance,
+                               string frameVisibleAbsorptance,
+                               string frameThermalHemisphericalEmissivity,
+                               string dividerType,
+                               string dividerWidth,
+                               string numberOfHorizontalDividers,
+                               string numberOfVerticalDividers,
+                               string dividerOutsideProjection,
+                               string dividerInsideProjection,
+                               string dividerConductance,
+                               string ratioOfDividerEdgeGlassConductanceToCenterOfGlassConductance,
+                               string dividerSolarAbsorptance,
+                               string dividerVisibleAbsorptance,
+                               string dividerThermalHemisphericalEmissivity,
+                               string outsideRevealSolarAbsorptance,
+                               string insideSillDepth,
+                               string insideSillSolarAbsorptance,
+                               string insideRevealDepth,
+                               string insideRevealSolarAbsorptance)
         {
             Name = id;
             Frame_Width = frameWidth;

@@ -11,7 +11,8 @@ namespace VC_Analytical_zones_exporter_Service.Models.Construction
         public string Name { get; set; }
         public List<Dictionary<string, string>> Layers { get; set; }
 
-        public SurfaceConstruction(string name, List<Dictionary<string, string>> layers)
+        public SurfaceConstruction(string name, 
+                                   List<Dictionary<string, string>> layers)
         {
             Name = name;
             Layers = layers;
