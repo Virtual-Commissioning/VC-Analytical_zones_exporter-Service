@@ -2,6 +2,7 @@
 using Autodesk.Revit.DB.Analysis;
 using System.Collections.Generic;
 using VC_Analytical_zones_exporter_Service.Models.Geometry;
+using System.Linq;
 
 namespace VC_Analytical_zones_exporter_Service.Helpers.ZoneMappers
 {
@@ -81,7 +82,8 @@ namespace VC_Analytical_zones_exporter_Service.Helpers.ZoneMappers
                         allElementIds.Add(element.Category + element.Id.ToString());
                     }
                     string allIds = string.Join(", ", allElementIds);
-                    constructionId = elements.Count.ToString() + " elements found. Possible Ids:" + allIds;
+                    //constructionId = elements.Count.ToString() + " elements found. Possible Ids:" + allIds;
+                    constructionId = elements[0].Id.ToString();
                 }
                 return constructionId;
             }

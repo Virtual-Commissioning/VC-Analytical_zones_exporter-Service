@@ -135,8 +135,12 @@ namespace VC_Analytical_zones_exporter_Service.Helpers.ZoneMappers
                     }
                     string viewFactorToGround = "";
                     List<Coordinate> vertexCoordinates = SurfaceGeometryMapper.MapSurfaceGeometry(energyAnalysisSurface, doc, analyticalZoneId);
-                    SubSurfaceType subSurfType = SubSurfaceMapper.MapSubSurfaces
-                        (energyAnalysisSurface, energyAnalysisSpace, doc, allAnalyticalSubSurfaces, analyticalZoneId, constructionId);
+                    SubSurfaceType subSurfType = SubSurfaceMapper.MapSubSurfaces(energyAnalysisSurface, 
+                                                                                 energyAnalysisSpace, 
+                                                                                 doc, 
+                                                                                 allAnalyticalSubSurfaces, 
+                                                                                 analyticalZoneId, 
+                                                                                 constructionId);
 
                     List<Coordinate> subSurfaceVertices = new List<Coordinate>();
                     if (energyAnalysisSurface.GetAnalyticalOpenings().Count > 0)
